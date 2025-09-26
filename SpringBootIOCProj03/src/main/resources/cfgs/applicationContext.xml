@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- provide fixed alias names for tha bat , ball dependent bean ids gathered from preoperties file -->
+    <alias name="${cktr.bat}" alias="bat"/>
+    <alias name="${cktr.ball}" alias="ball"/>
+</beans>
