@@ -11,4 +11,7 @@ public class Employee {
 	private Double grossSalary;
 	private Double netSalary;
 
+	public Employee() {
+		System.out.println("Employee:: 0-param constructor");
+	}
 }
