@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 import com.hk.model.Employee;
 
 @Repository("empDAO")
-public class EmployeeDAOImpl implements IEmployeeDAO {
+public class OracleEmployeeDAOImpl implements IEmployeeDAO {
 	
 	private static final String GET_EMPS_BY_DEGS =
 		"SELECT EMPNO , ENAME, JOB, SAL FROM EMP WHERE JOB IN (?,?,?) ORDER BY JOB";
@@ -23,7 +23,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 	@Autowired
 	private DataSource ds;
 	
-	public EmployeeDAOImpl() {
+	public OracleEmployeeDAOImpl() {
 		System.out.println("EmployeeDAOImpl:: 0-param Constructor )");
 	}
 
