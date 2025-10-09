@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "course.catalog.javaprice",
+    "type": "java.lang.String",
+    "description": "A description for 'course.catalog.javaprice'"
+  },
+  {
+    "name": "course.catalog.advjavaprice",
+    "type": "java.lang.String",
+    "description": "A description for 'course.catalog.advjavaprice'"
+  },
+  {
+    "name": "course.catalog.oracleprice",
+    "type": "java.lang.String",
+    "description": "A description for 'course.catalog.oracleprice'"
+  },
+  {
+    "name": "stud.info.name",
+    "type": "java.lang.String",
+    "description": "A description for 'stud.info.name'"
+  },
+  {
+    "name": "stud.info.addrs",
+    "type": "java.lang.String",
+    "description": "A description for 'stud.info.addrs'"
+  }
+]}
