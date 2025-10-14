@@ -1,0 +1,51 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: BootIOCProj14-MiniProj-RealtimeDI
+  profiles:
+    active: prod
+---
+spring:
+   config:
+       activate:
+            on-profile: dev
+   datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     url: jdbc:mysql:///ntspmbs719db
+     username: root
+     password: root
+     type: org.apache.commons.dbcp2.BasicDataSource
+---
+spring:
+   config:
+       activate:
+         on-profile: test
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///ntspmbs719db
+      username: root
+      password: root
+      type: com.mchange.v2.c3p0.ComboPooledDataSource
+---
+spring:
+   config:
+     activate:
+        on-profile: uat
+   datasource:
+         driver-class-name: oracle.jdbc.driver.OracleDriver
+         url: jdbc:oracle:thin:@localhost:1521:xe
+         username: system
+         password: tiger
+         type: oracle.ucp.jdbc.PoolDataSourceImpl
+---
+  spring:
+    config:
+       activate:
+         on-profile: prod
+    datasource:
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+       url: jdbc:oracle:thin:@localhost:1521:xe
+       username: system
+       password: tiger
